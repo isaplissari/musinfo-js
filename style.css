@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark {
+    background-color: #121212;
+    color: white;
+}
+.dark #home,
+.dark #home h1,
+.dark #home p,
+.dark #sobre h2,
+.dark #sobre p,
+.dark #carreira h2,
+.dark #carreira h3,
+.dark #carreira p,
+.dark #midia h3,
+.dark #contato h2 {
+    color: white !important;
+}
+nav{
+    background: #222;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #74a780;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+#tema{
+    background-color: #111111;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 45px;
+    width: 120px;
+}
+
+
+#home{
+    color: #32543a;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#home::before{
+    background-image: url(./imgs/16316440841945.jpg.webp);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 30%;
+    z-index: -1;
+}
+
+#home h1{
+    font-size: 40px;
+}
+
+#home p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    padding: 110px 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+#sobre{
+    margin-left: 60px;
+    margin-right: 400px;
+    text-align: justify;
+}
+
+#sobre h2{
+    font-size: 26px;
+    color: #32543a;
+}
+
+#sobre p{
+    color: #303030
+}
+
+#carreira{
+    margin-left: 400px;
+    margin-right: 60px;
+    text-align: justify;
+}
+
+#carreira h2{
+    font-size: 26px;
+    text-align: right;
+    color: #32543a;
+}
+
+#carreira h3{
+    font-size: 26px;
+    text-align: right;
+    color: #32543a;
+}
+
+#carreira p{
+    text-align: justify;
+    color: #303030;
+}
+
+#midia{
+    display: flexbox;
+    margin-left: 60px;
+    margin-top: 17px;
+    margin-bottom: 120px;
+
+}
+
+#midia h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#32543a;
+    font-size: 26px;
+}
+
+#contato {
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.contato-box h4{
+    font-weight: light;
+}
+
+.contato-box{
+    text-align: center;
+    width: 800px;
+}
+
+#contato h2{
+    font-size: 26px;
+    text-align: center;
+    color: #32543a;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: auto;
+    margin: 0 auto;
+}
+
+form label{
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    overflow-y: scroll;
+}
+
+form button{
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover{
+    background: #32543a;
+}
+
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    font-weight: lighter;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 10px;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #74a780;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+footer ul li a:hover::after{
+    width: 100%;
+}
